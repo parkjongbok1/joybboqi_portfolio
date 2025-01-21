@@ -148,8 +148,7 @@
 }
 .page .desc .item a {
   width: 100%;
-  /* height: 76%; */
-  height: 155px;
+  height: 266px;
 
   display: block;
   transition: 0.5s;
