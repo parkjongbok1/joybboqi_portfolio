@@ -1,0 +1,356 @@
+/* Light 300 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/* Regular 400 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium 500 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Bold 700 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Black 900 */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff")
+    format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* font-family: "Philosopher", serif; */
+
+.ani {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 1s;
+}
+.ani_T {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: all 1s;
+}
+.ani_L {
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 1s;
+}
+.ani_R {
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 1s;
+}
+.ani_O {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.aniIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.aniIn_T {
+  opacity: 1;
+  transform: translateY(0);
+}
+.aniIn_L {
+  opacity: 1;
+  transform: translateX(0);
+}
+.aniIn_R {
+  opacity: 1;
+  transform: translateX(0);
+}
+.aniIn_O {
+  opacity: 1;
+}
+
+.t-delay0_1 {
+  transition-delay: 0.1s;
+}
+.t-delay0_2 {
+  transition-delay: 0.2s;
+}
+.t-delay0_3 {
+  transition-delay: 0.3s;
+}
+.t-delay0_4 {
+  transition-delay: 0.4s;
+}
+.t-delay0_5 {
+  transition-delay: 0.5s;
+}
+.t-delay0_6 {
+  transition-delay: 0.6s;
+}
+.t-delay0_7 {
+  transition-delay: 0.7s;
+}
+.t-delay0_8 {
+  transition-delay: 0.8s;
+}
+.t-delay0_9 {
+  transition-delay: 0.9s;
+}
+.t-delay1 {
+  transition-delay: 1s;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* wrap */
+html {
+  height: 100%;
+  font-family: "Pretendard";
+  scroll-behavior: smooth;
+  background: #eff1ff;
+}
+body {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  color: #141827;
+}
+.wrep {
+  width: 100%;
+  max-width: 1920px;
+  /* min-width: 1400px; */
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  max-width: 1920px;
+  /* min-width: 1400px; */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+#common {
+  /* width: 100%; */
+  max-width: 1920px;
+  /* min-width: 1400px; */
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  z-index: 2222;
+
+  color: white;
+}
+.header .inner {
+  width: 95%;
+  margin: 0 auto;
+}
+.header .hea_top {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid white;
+}
+.header .hea_top h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 30px;
+  color: #f3c847;
+}
+.header .hea_top .mail {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header .hea_top .online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.header .hea_top .online span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #0cff00;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.header .hea_top .online h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.header .hea_btm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 16px;
+}
+.header .hea_btm h3 {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header .hea_btm .menu {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .hea_btm .menu li {
+  margin-left: 26px;
+}
+.header .hea_btm .menu li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.header .hea_btm .menu li a:hover {
+  color: #f3c847;
+}
+
+/* footer */
+.footer {
+  width: 83%;
+  margin: 0 auto;
+}
+.footer .inner {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 52px;
+}
+.footer .top_txt {
+  width: 100%;
+  margin-bottom: 62px;
+  position: relative;
+}
+.footer .top_txt::after,
+.footer .top_txt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 1px;
+  background: #141827;
+}
+.footer .top_txt::after {
+  left: 0;
+}
+.footer .top_txt::before {
+  right: 0;
+}
+.footer .top_txt h2 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Philosopher", serif;
+  text-transform: uppercase;
+}
+
+.footer .desc {
+}
+.footer .desc .title {
+}
+.footer .desc .title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.footer .desc .title p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0 32px;
+}
+
+.footer .desc .items {
+  width: 50vw;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer .desc .items .item {
+  flex: 1;
+  height: 72px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url("../image/foot_item.png") no-repeat center center;
+  background-size: cover;
+}
+.footer .desc .items .item h4 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: white;
+}
+
+.footer .ad_min {
+  margin-top: 52px;
+}
+.footer .ad_min h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
