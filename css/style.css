@@ -251,13 +251,15 @@
 /* about */
 .about {
   width: 100%;
+  margin-bottom: 70px;
 }
 .about .title,
 .cont .inner {
   padding: 50px;
 }
 .cont .inner {
-  margin-top: 70px;
+  /* margin-top: 70px; */
+  margin-bottom: 70px;
 }
 .about .title h4 {
   font-size: 18px;
@@ -289,7 +291,14 @@
   font-weight: 700;
   color: #141827;
 }
-
+.about_link_cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .link:nth-child(2) {
+  margin-left: 5%;
+}
 .about .link,
 .portfolio_item .link {
   display: flex;
